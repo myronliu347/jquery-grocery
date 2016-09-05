@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aa953788477/jquery-grocery.git"
+    "url": "git+https://github.com/myronliu347/jquery-grocery.git"
   },
   "keywords": [
     "jquery",
@@ -17,11 +17,16 @@
   "author": "myron liu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aa953788477/jquery-grocery/issues"
+    "url": "https://github.com/myronliu347/jquery-grocery/issues"
   },
-  "homepage": "https://github.com/aa953788477/jquery-grocery#readme",
+  "homepage": "https://github.com/myronliu347/jquery-grocery#readme",
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "karma start test/karma.conf.js --single-run"
+  },
   "dependencies": {
-    "jQuery": "^1.7.4"
+    "jquery": "^3.1.0",
+    "si-log": "^0.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
@@ -38,6 +43,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-rollup-plugin": "^0.2.2",
     "karma-spec-reporter": "0.0.26",
+    "lodash.assign": "^4.2.0",
     "mocha": "^3.0.2",
     "phantomjs-prebuilt": "^2.1.12",
     "rollup": "^0.34.13",
